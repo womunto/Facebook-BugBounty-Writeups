@@ -1,0 +1,47 @@
+Mention users who have disabled mentioning in privacy settings
+Description/Impact
+There is a feature to mention another user in Instagram. We can disable the feature in the privacy setting. When the user disabled the setting, no one can mention the user. This is a report about the bug where users can mention disabled users through meta business suite’s inbox Instagram comment. This is present on web and android.
+
+The exploitation of this lead to the mention of one user by another user without his/her consent or despite the setting.
+
+Repro set-ups
+Instagram UserA
+Instagram UserB
+Facebook UserA
+
+Instagram UserA and Facebook UserA are connected
+
+Instagram UserB has set who can mention to No-one
+
+BUG-1
+
+1. As we know Instagram UserA and Facebook UserA are connected, so Facebook UserA opened Business Suite.
+2. Go to inbox in Business Suite.
+3. Instagram UserB commented on one of the post of Instagram UserA.
+4. Instagram UserA replied to Instagram UserB from an Instagram comment from inbox in Business Suite. Instagram UserA replied @InstgramUserB thank you.
+5. Instagram UserB got mentioned in the comment section in the Instagram app despite the setting is no-one.
+
+BUG-2
+I found a another bug, its same as mentioning user who disabled mentioning.
+
+Impact and setup is same for this bug too.
+This bug is present in business suite desktop and android.
+
+Reproduction step
+1. Facebook UserA go to his Business Suite and post a instagram post from there.
+2. Facebook UserA mention Instagram UserB in the caption @InstagramUserB in the post. When Instagram app is opened, Instagram UserB is mentioned in the caption of the instagram post.
+
+BUG-3
+I found a another bug, its same as mentioning user who disabled mentioning.
+
+Impact and setup are same for this bug too.
+
+Reproduction step
+1. Facebook UserA go to his Creator Studio and go to inbox+.
+2. Go to instagram(logo) and mention @InstagramUserB as reply. Instagram UserB is mentioned in comment section despite the setting.
+This bug is present in creator studio desktop.
+
+siddharthamallathakuri mentioning setting https://youtube.com/shorts/DA3SXOX_Sxk
+BUG-1 POC https://youtu.be/cQsPHtz0zVk
+BUG-2 POC https://youtu.be/uSSWsgCK1bU
+BUG-3 POC https://youtu.be/zqVLbUMx3WI
